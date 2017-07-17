@@ -7,17 +7,17 @@ module.exports = {
     from: {
         version: '17.05',
         url: 'https://api.enterprise.apigee.com/v1',
-        userid: 'wadhwaneeraj.nw@gmail.com',
-        passwd: 'Digitalapijourney123',
-        org: 'neerajwadhwaorganization',
-        env: 'test'
+        userid: 'your userid here (for source)',
+        passwd: 'your password here (for source)',
+        org: 'your org here (source)',
+        env: 'environment (for source)'
     },
     to: {
         version: '17.05',
         url: 'https://api.enterprise.apigee.com/v1',
-        userid: 'nw3360@gmail.com',
-        passwd: 'Digitalapijourney123',
-        org: 'nw3360-trial',
-        env: 'prod'
+        userid: 'your userid here (for target) ',
+        passwd: 'yout password here (for target)',
+        org: 'your org here (target)',
+        env: 'environment (for target)'
     }
 } ;
