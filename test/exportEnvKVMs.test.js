@@ -8,9 +8,6 @@ const chai = require('chai');
 
 const config = require('../config');
 const options = require('../lib/options');
-const urlBuilder = require('../lib/URLBuilders');
-const utilsForExport = require('../lib/utilsForExport');
-const utils = require('../lib/utils');
 const exportEnvKVMs = require('../lib/commands/exportEnvKVMs');
 
 

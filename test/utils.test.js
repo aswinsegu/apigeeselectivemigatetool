@@ -3,7 +3,6 @@
  */
 
 const chai = require('chai');
-const request = require('request');
 
 const utilsForExport = require('../lib/utilsForExport');
 const utils = require('../lib/utils');
