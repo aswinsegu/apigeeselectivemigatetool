@@ -8,18 +8,18 @@ module.exports = {
 
     from: {
         version: '17.05',
-        url: 'url of the edge server (for source)',
-        userid: 'username (for source)',
-        passwd: 'password (for source)',
-        org: 'org name (for source)',
-        env: 'env name (for source)'
+        url: 'https://api.enterprise.apigee.com/v1/',
+        userid: 'wadhwaneeraj.nw@gmail.com',
+        passwd: 'Digitalapijourney123',
+        org: 'neerajwadhwaorganization',
+        env: 'test'
     },
     to: {
         version: '17.05',
-        url: 'url of the edge server (for destination)',
-        userid: 'username (for destination)',
-        passwd: 'password (for destination)',
-        org: 'org name (for destination)',
-        env: 'env name (for destination)'
+        url: 'https://api.enterprise.apigee.com/v1/',
+        userid: 'nw3360@gmail.com',
+        passwd: 'Digitalapijourney123',
+        org: 'nw3360-trial',
+        env: 'prod'
     }
 } ;
