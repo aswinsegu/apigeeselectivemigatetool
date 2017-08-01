@@ -71,9 +71,11 @@ Table for configuration fields description:
 
 ### Running the tool
 
-From the command-line run the tool as apigeemigrate {command-name}
+From the command-line run the tool as:
 
-See the Commands section to know more about commands.
+                     apigeemigrate {command-name}
+
+See the Commands section to know more about all the available commands.
 
 
 
