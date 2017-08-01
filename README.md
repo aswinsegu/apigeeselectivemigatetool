@@ -3,20 +3,18 @@
 This tool is used to selectively migrate Apigee entities from one organization to another organization.
 
 
-<br></br>
-
 ### Prerequisites
 
 Following are some prerequisites for Apigee Selective Migration Tool:
 
-1) Please make sure the environment in which this tool will run have [Node.js](https://nodejs.org/en/download/current/) v8.1.0 or above installed.
+1) [Node.js](https://nodejs.org/en/download/current/) v8.1.0 or above installed.
 
-2) If you plan to install this tool globally then please make sure that you have the permissions required to do so.
+2) Appropriate permissions to install the tool globally.
 
-3) Please note that the tool will write the exported data to the directory in which the tool is being used, so make sure you have write access to the current directory.
+3) Write access to the current directory.
 
 
-### Installation
+### Installation Steps
 
 Follow the below mentioned steps to install the tool
 
@@ -24,7 +22,9 @@ Follow the below mentioned steps to install the tool
 
 2) Edit the configuration file "config.js" with appropriate credentials.
 
-2) In the root directory of the project run the following command- "npm install -g ." (without quotes).
+2) In the root directory of the project run the following command-
+
+                    npm install -g .
 
 Note:
     Please make sure you have appropriate permissions to install the tool globally.
@@ -39,43 +39,34 @@ This is the sample configuration file, it should contain all the necessary
 module.exports = {
 
     from: {
-        version: '17.05',
-        url: 'url of the edge server (for source)',
-        userid: 'username (for source)',
-        passwd: 'password (for source)',
-        org: 'org name (for source)',
-        env: 'env name (for source)'
+        version: '<version (for source)>',
+        url: '<url of the edge server (for source)>',
+        userid: '<username (for source)>',
+        passwd: '<password (for source)>',
+        org: '<org name (for source)>',
+        env: '<env name (for source)>'
     },
     to: {
-        version: '17.05',
-        url: 'url of the edge server (for destination)',
-        userid: 'username (for destination)',
-        passwd: 'password (for destination)',
-        org: 'org name (for destination)',
-        env: 'env name (for destination)'
+        version: '<version (for destination)>',
+        url: '<url of the edge server (for destination)',
+        userid: '<username (for destination)',
+        passwd: '<password (for destination)',
+        org: '<org name (for destination)',
+        env: '<env name (for destination)'
     }
 };
 ```
 
-* version: The version field holds the version number of the OPDK, in the "from" section it is
-           for the source organization and in the "to" section it is for the target organization.
+Table for configuration fields description:
 
-* url: The url field should have the url of the OPDK, in the "from" section it should point to
-       the source organization and in the "to" section it should point to the target organization.
-
-* userid: The userid field should have the userid or the email id for the user who has all the rights
-          required to perform the operations, in the "from" section it should have the userid from the
-          source organization and in the "to" section it should have the userid from the target organization.
-
-* passwd: The passwd field should have the password of the user that is mentioned in the related section.
-
-* org: The org field should hold the name of the organization on which these operation should be performed,
-       in the "from" section it should have source organization name and in the "to" section it should have
-       the name of the target organization.
-
-* env: The env field should hold the name of the environment in which the operation will be performed, in the
-       "from" section it should hold the name of the source environment and in the "to" section it should hold
-       the name of the target environment.
+| Field name   |                      from (source)                      |                   to (target)                   |
+|:------------:|:-------------------------------------------------------:|:-----------------------------------------------:|
+| version      | source OPDK version                                     | target OPDK version                             |
+| url          | source OPDK URL                                         | target OPDK URL                                 |
+| userid       | userid or email id of source organization user          | userid or email id of target organization user  |
+| passwd       | password for source organization user                   | password for target organization user           |
+| org          | source organization name                                | target organization name                        |
+| env          | source environment name                                 | target environment name                         |
 
 
 ### Running the tool
@@ -87,6 +78,8 @@ See the Commands section to know more about commands.
 
 
 ### Commands
+
+Please select the Apigee entities when the prompt appears on the screen for any of the below-mentioned commands.
 
 * `apigeemigrate` - Get the list of all available commands.
 
