@@ -9,7 +9,7 @@ This tool is used to selectively migrate Apigee entities from one organization t
 
 Following are some prerequisites for Apigee Selective Migration Tool:
 
-1) Please make sure the environment this tool is gonna run in have [Node.js](https://nodejs.org/en/download/current/) v8.1.0 or above installed.
+1) Please make sure the environment in which this tool will run have [Node.js](https://nodejs.org/en/download/current/) v8.1.0 or above installed.
 
 2) If you plan to install this tool globally then please make sure that you have the permissions required to do so.
 
@@ -20,9 +20,11 @@ Following are some prerequisites for Apigee Selective Migration Tool:
 
 Follow the below mentioned steps to install the tool
 
-1) Clone the repository from [https://github.com/neerajwadhwa/apigeeselectivemigatetool.git]
+1) Clone the repository from [https://github.com/neerajwadhwa/apigeeselectivemigatetool.git].
 
-2) In the root directory of the project run the following command- "npm install -g ."
+2) Edit the configuration file "config.js" with appropriate credentials.
+
+2) In the root directory of the project run the following command- "npm install -g ." (without quotes).
 
 Note:
     Please make sure you have appropriate permissions to install the tool globally.
@@ -131,4 +133,6 @@ See the Commands section to know more about commands.
 * `apigeemigrate exportUserRoles` - Export all the specified user roles from the source organization.
 
 * `apigeemigrate importUserRoles` - Import all the user roles which were exported previously to the target organization.
+
+* `apigeemigrate deployAPIProxy` - Deploy the imported API proxies to the target organization in the target environment.
 
